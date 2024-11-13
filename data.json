@@ -1,0 +1,84 @@
+{
+  "aeroport": {
+    "employes": [
+      {
+        "nom": "nomemp1",
+        "prenom": "prenomemp1",
+        "age": 35,
+        "poste": "Pilote"
+      },
+      {
+        "nom": "nomemp2",
+        "prenom": "prenomemp2",
+        "age": 28,
+        "poste": "Copilote"
+      }
+    ],
+    "pistes": [
+      {
+        "numero": "01",
+        "longueur": 3000,
+        "etat": "Ouverte"
+      },
+      {
+        "numero": "02",
+        "longueur": 2500,
+        "etat": "Fermée"
+      }
+    ],
+    "compagnies": [
+      {
+        "nom": "TuiiFly",
+        "code": "11",
+        "pays": "Belgique"
+      },
+      {
+        "nom": "SkyFly",
+        "code": "22",
+        "pays": "États-Unis"
+      }
+    ],
+    "avions": [
+      {
+        "immatriculation": "A11",
+        "modele": "Airbus",
+        "capacite": 180,
+        "compagnie": "AEX"
+      },
+      {
+        "immatriculation": "A22",
+        "modele": "Boeing",
+        "capacite": 200,
+        "compagnie": "SKF"
+      }
+    ],
+    "vols": [
+      {
+        "numero": "A100",
+        "depart": {
+          "aeroport": "Paris-CDG",
+          "heure": "08:00"
+        },
+        "arrivee": {
+          "aeroport": "New York-JFK",
+          "heure": "11:00"
+        },
+        "avion": "A11",
+        "pilote": "prenomemp1 nomemp1"
+      },
+      {
+        "numero": "A200",
+        "depart": {
+          "aeroport": "Los Angeles-LAX",
+          "heure": "14:00"
+        },
+        "arrivee": {
+          "aeroport": "Tokyo-NRT",
+          "heure": "08:00"
+        },
+        "avion": "A22",
+        "pilote": "prenomemp2 nomemp2"
+      }
+    ]
+  }
+}
