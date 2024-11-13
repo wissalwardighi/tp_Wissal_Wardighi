@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeroport SYSTEM "aireport.dtd">
+<aeroport>
+    
+    <employes>
+        <employe>
+            <emp_nom>nomemp1</emp_nom>
+            <prenom>prenomemp1</prenom>
+            <age>35</age>
+            <poste>Pilote</poste>
+        </employe>
+        <employe>
+            <emp_nom>nomemp2</emp_nom>
+            <prenom>prenomemp2</prenom>
+            <age>28</age>
+            <poste>Copilote</poste>
+        </employe>
+    </employes>
+  
+    <pistes>
+        <piste>
+            <numero>01</numero>
+            <longueur>3000</longueur>
+            <etat>Ouverte</etat>
+        </piste>
+        <piste>
+            <numero>02</numero>
+            <longueur>2500</longueur>
+            <etat>Fermée</etat>
+        </piste>
+    </pistes>
+    
+    <compagnies>
+        <compagnie>
+            <comp_nom>TuiiFly</comp_nom>
+            <code>11</code>
+            <pays>Belgique</pays>
+        </compagnie>
+        <compagnie>
+            <comp_nom>SkyFly</comp_nom>
+            <code>22</code>
+            <pays>États-Unis</pays>
+        </compagnie>
+    </compagnies>
+    
+    <avions>
+        <avion>
+            <immatriculation>A11</immatriculation>
+            <modele>Airbus</modele>
+            <capacite>180</capacite>
+            <compagnie_ref>TuiiFly</compagnie_ref> 
+        </avion>
+        <avion>
+            <immatriculation>A22</immatriculation>
+            <modele>Boeing</modele>
+            <capacite>200</capacite>
+            <compagnie_ref>SkyFly</compagnie_ref> 
+        </avion>
+    </avions>
+    
+    <vols>
+        <vol>
+            <numero>A100</numero>
+            <depart>
+                <aeroport>Paris-CDG</aeroport>
+                <heure>08:00</heure>
+            </depart>
+            <arrivee>
+                <aeroport>New York-JFK</aeroport>
+                <heure>11:00</heure>
+            </arrivee>
+            <avion_ref>A11</avion_ref> 
+            <pilote>prenomemp1 nomemp1</pilote>
+        </vol>
+        <vol>
+            <numero>A200</numero>
+            <depart>
+                <aeroport>Los Angeles-LAX</aeroport>
+                <heure>14:00</heure>
+            </depart>
+            <arrivee>
+                <aeroport>Tokyo-NRT</aeroport>
+                <heure>08:00</heure>
+            </arrivee>
+            <avion_ref>A22</avion_ref> 
+            <pilote>prenomemp2 nomemp2</pilote>
+        </vol>
+    </vols>
+</aeroport>
+
+  
