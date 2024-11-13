@@ -1,0 +1,48 @@
+<!DOCTYPE aeroport [
+    <!ELEMENT aeroport (employes, pistes, compagnies, avions, vols)>
+
+
+    <!ELEMENT employes (employe+)>
+    <!ELEMENT employe (emp_nom, prenom, age, poste)>
+    <!ELEMENT emp_nom (#PCDATA)>
+    <!ELEMENT prenom (#PCDATA)>
+    <!ELEMENT age (#PCDATA)> 
+    <!ELEMENT poste (#PCDATA)>
+
+    
+    <!ELEMENT pistes (piste+)>
+    <!ELEMENT piste (numero, longueur, etat)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT longueur (#PCDATA)>
+    <!ELEMENT etat (#PCDATA)>
+
+  
+    <!ELEMENT compagnies (compagnie+)>
+    <!ELEMENT compagnie (comp_nom, code, pays)>
+    <!ELEMENT comp_nom (#PCDATA)>
+    <!ELEMENT code (#PCDATA)>
+    <!ELEMENT pays (#PCDATA)>
+
+   
+    <!ELEMENT avions (avion+)>
+    <!ELEMENT avion (immatriculation, modele, capacite, compagnie_ref)>
+    <!ELEMENT immatriculation (#PCDATA)>
+    <!ELEMENT modele (#PCDATA)>
+    <!ELEMENT capacite (#PCDATA)> 
+    <!ELEMENT compagnie_ref (#PCDATA)> 
+
+
+    <!ELEMENT vols (vol+)>
+    <!ELEMENT vol (numero, depart, arrivee, avion_ref, pilote)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT depart (aeroport, heure)>
+    <!ELEMENT arrivee (aeroport, heure)>
+    <!ELEMENT aeroport (#PCDATA)>
+    <!ELEMENT heure (#PCDATA)>
+    <!ELEMENT pilote (#PCDATA)>
+    <!ELEMENT avion_ref (#PCDATA)> 
+]>
+
+
+
+
